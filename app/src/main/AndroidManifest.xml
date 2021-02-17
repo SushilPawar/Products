@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.product">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <activity android:name=".Product.Update_products" android:parentActivityName=".Product.Product_details" android:label="Update Products"></activity>
+        <activity android:name=".Product.Product_details" android:parentActivityName=".Product.View_all_products" android:label=" Product Details"/>
+        <activity android:name=".Company.Update_company"  android:parentActivityName=".Company.View_all_companies" android:label="Update"/>
+        <activity android:name=".Company.Company_details" android:parentActivityName=".Company.View_all_companies" android:label="Company Details"/>
+        <activity android:name=".Product.View_all_products" android:parentActivityName=".MainActivity" android:label="All Products"/>
+        <activity android:name=".Company.View_all_companies" android:parentActivityName=".MainActivity" android:label="All Companies"/>
+        <activity android:name=".Company.company_add_company" android:parentActivityName=".MainActivity" android:label="Add Company"/>
+        <activity android:name=".Product.Addproduct" android:parentActivityName=".MainActivity" android:label="Add Product"/>
+        <activity android:name=".MainActivity" android:label="DashBoard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

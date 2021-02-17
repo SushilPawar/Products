@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/appbackground"
+    android:layout_height="match_parent"
+    tools:context=".Company.Update_company">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="20sp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20sp"
+        android:padding="20sp"
+        app:cardElevation="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/compnaytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="46dp"
+            android:text="Compnay Name"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/updatecompanyname"
+            android:layout_width="250sp"
+            android:layout_height="40sp"
+            android:layout_below="@id/compnaytv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/gray"
+            android:layout_marginStart="41dp"
+            android:layout_marginLeft="41dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:background="@drawable/edittext"
+            android:paddingLeft="5sp"/>
+
+        <TextView
+            android:id="@+id/dealertv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updatecompanyname"
+            android:layout_alignLeft="@+id/compnaytv"
+            android:layout_marginTop="10sp"
+            android:text="Dealer Name"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/updatedealer"
+            android:inputType="textEmailAddress"
+            android:layout_width="250sp"
+            android:layout_height="40sp"
+            android:paddingLeft="5sp"
+            android:textColor="@color/gray"
+            android:layout_below="@id/dealertv"
+            android:layout_alignLeft="@+id/compnaytv"
+            android:background="@drawable/edittext" />
+
+        <TextView
+            android:id="@+id/sectortv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updatedealer"
+            android:layout_alignLeft="@+id/compnaytv"
+            android:layout_marginTop="10sp"
+            android:text="Sector"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/updatesector"
+            android:inputType="number"
+            android:layout_width="250sp"
+            android:layout_height="40sp"
+            android:layout_below="@id/sectortv"
+            android:layout_alignLeft="@+id/compnaytv"
+            android:textColor="@color/gray"
+            android:background="@drawable/edittext"
+            android:paddingLeft="5sp"/>
+
+        <Button
+            android:id="@+id/updatebutton"
+            android:layout_width="150sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updatesector"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="46sp"
+            android:background="@drawable/buttons"
+            android:text="Update" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
